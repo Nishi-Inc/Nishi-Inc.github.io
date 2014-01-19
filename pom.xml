@@ -30,12 +30,12 @@
     </developers>
 
     <build>
-        <directory>bin</directory>
-        <outputDirectory>bin/classes</outputDirectory>
+        <directory>web/bin</directory>
+        <outputDirectory>web/bin/classes</outputDirectory>
         <finalName>${project.artifactId}-${project.version}</finalName>
-        <testOutputDirectory>bin/test-classes</testOutputDirectory>
-        <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <testOutputDirectory>web/bin/test-classes</testOutputDirectory>
+        <sourceDirectory>web/src/main/java</sourceDirectory>
+        <testSourceDirectory>web/src/test/java</testSourceDirectory>
 
         <pluginManagement>
             <plugins>
@@ -52,6 +52,14 @@
         </pluginManagement>
 
     </build>
+
+    <properties>
+        <struts.version>2.3.16</struts.version>
+        <struts.convention.plugin.version>2.3.1.2</struts.convention.plugin.version>
+
+        <spring.mvc.version>4.0.0.RELEASE</spring.mvc.version>
+        <spring.security.version>3.2.0.RELEASE</spring.security.version>
+    </properties>
 
     <dependencies>
         <!-- For unit testing -->
@@ -75,6 +83,39 @@
             <artifactId>lombok</artifactId>
             <version>1.12.2</version>
             <scope>compile</scope>
+        </dependency>
+
+        <!-- STRUTS -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-convention-plugin</artifactId>
+            <version>${struts.convention.plugin.version}</version>
+        </dependency>
+
+        <!-- SPRING MVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.mvc.version}</version>
+        </dependency>
+
+        <!-- SPRING Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.security.version}</version>
         </dependency>
 
     </dependencies>

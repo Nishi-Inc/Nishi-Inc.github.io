@@ -1,4 +1,4 @@
-Nishi-Inc.github.io
+Nishi Incorporation&nbsp;&nbsp;&nbsp;&nbsp;
 ===================
 
-For GitHub pages
+This repository is for Struts 2 and spring-framework based website of Nishi Inc.
