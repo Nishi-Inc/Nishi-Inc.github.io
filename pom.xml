@@ -54,6 +54,8 @@
     </build>
 
     <properties>
+        <mongo.driver.version>2.11.3</mongo.driver.version>
+
         <struts.version>2.3.16</struts.version>
         <struts.convention.plugin.version>2.3.1.2</struts.convention.plugin.version>
 
@@ -68,6 +70,13 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Mongo -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>${mongo.driver.version}</version>
         </dependency>
 
         <!-- For helper methods -->

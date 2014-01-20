@@ -7,7 +7,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/applicationContext.xml</param-value>
+        <param-value>/WEB-INF/config/spring-context.xml</param-value>
     </context-param>
     <filter>
         <filter-name>struts2</filter-name>
